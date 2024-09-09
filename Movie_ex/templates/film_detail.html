@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Movie detail</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Actors</th>
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>{{ title.title }}</td>
+                   <td>{% for act in actors %}
+                     {{act.name}},
+                    {% endfor %}</td>
+                </tr>
+        </tbody>
+    </table>
+</body>
+</html>
